@@ -1,0 +1,39 @@
+function PaGlobalFunc_RoseWarTeamSkillManager_Clear()
+  PaGlobal_RoseWarTeamSkillManager:clear()
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_SelectSkillType(skillType)
+  PaGlobal_RoseWarTeamSkillManager:setSkillType(skillType)
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_UnSelectSkillType(skillType)
+  local self = PaGlobal_RoseWarTeamSkillManager
+  if self._skillType == skillType then
+    PaGlobal_RoseWarTeamSkillManager:setSkillType(nil)
+  end
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_GetSelectedSkillType()
+  return PaGlobal_RoseWarTeamSkillManager:getSkillType()
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_isUsingSkill()
+  return PaGlobal_RoseWarTeamSkillManager:getSkillType() ~= nil
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_Update(deltaTime)
+  PaGlobal_RoseWarTeamSkillManager:update(deltaTime)
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_UpdatePosition(position)
+  PaGlobal_RoseWarTeamSkillManager:setSkillParam_Position(position)
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_UpdateFierceBattleKey(fierceBattleKeyRaw)
+  PaGlobal_RoseWarTeamSkillManager:setSkillParam_FierceBattleKeyRaw(fierceBattleKeyRaw)
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_UpdatePartyDataKey(partyDataKey)
+  PaGlobal_RoseWarTeamSkillManager:setSkillParam_PartyDataKey(partyDataKey)
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_UseRoseWarSkill(skillType)
+  PaGlobal_RoseWarTeamSkillManager:useSkill(skillType)
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_Initialize()
+  PaGlobal_RoseWarTeamSkillManager:initialize()
+end
+function PaGlobalFunc_RoseWarTeamSkillManager_UseSkillAck(skillType, isSucceed)
+  PaGlobal_RoseWarTeamSkillManager:activatedSkillEffect(skillType, isSucceed)
+end

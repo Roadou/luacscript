@@ -1,0 +1,73 @@
+PaGlobal_MessageBox_CrystalSet_All = {
+  _ui = {
+    stc_textTitle = nil,
+    btn_close = nil,
+    stc_bg = nil,
+    stc_textContent = nil,
+    stc_changeBg = nil,
+    stc_beforeTitle = nil,
+    stc_beforeTitleTemplate = nil,
+    stc_arrow = nil,
+    stc_afterTitle = nil,
+    stc_afterTitleTemplate = nil,
+    stc_detailBg = nil,
+    stc_textSubTitle = nil,
+    stc_frame = nil,
+    stc_frameContent = nil,
+    stc_textNameTemp = nil,
+    stc_vScroll = nil,
+    btn_yes = nil,
+    btn_no = nil,
+    stc_consoleGuide = nil
+  },
+  _slotConfig = {
+    createIcon = true,
+    createBorder = true,
+    createCount = true
+  },
+  _deleteJewelSlotList = {},
+  _addJewelSlotList = {},
+  _deleteJewelSlotBgList = {},
+  _addJewelSlotBgList = {},
+  _deleteJewelKeyList = {},
+  _addJewelKeyList = {},
+  _deleteJewelSlotNoList = {},
+  _addJewelSlotNoList = {},
+  _deleteJewelCount = 0,
+  _addJewelCount = 0,
+  _panelOriginSizeY = 0,
+  _stcBgOriginSizeY = 0,
+  _stcChangeBgOriginSizeY = 0,
+  _stcArrowOriginPosY = 0,
+  _slotTemplateOriginPosX = 0,
+  _slotTemplateOriginSizeX = 0,
+  _stcAfterTitleOriginPosY = 0,
+  _stcDetailBgOriginPosY = 0,
+  _stcDetailBgOriginSizeY = 0,
+  _stcFrameOriginPosY = 0,
+  _stcFrameOriginSizeY = 0,
+  _stcFrameContentOriginPosY = 0,
+  _stcFrameContentOriginSizeY = 0,
+  _btnYesOriginPosY = 0,
+  _btnNoOriginPosY = 0,
+  _stcConsoleGuidePosY = 0,
+  _exeptionLanguage = false,
+  _languageTypeString = "",
+  _separationCharater = "&",
+  _deleteTotalDesc = {},
+  _addTotalDesc = {},
+  _totalDesc = {},
+  _effectDesc = {},
+  _deleteBuffCount = 0,
+  _addBuffCount = 0,
+  _buffCount = 0,
+  _beforeCount = 0,
+  _isPadSnapping = false,
+  _initialize = false
+}
+runLua("UI_Data/Script/Window/MessageBox/Panel_Window_MessageBox_CrystalSet_All_1.lua")
+runLua("UI_Data/Script/Window/MessageBox/Panel_Window_MessageBox_CrystalSet_All_2.lua")
+registerEvent("FromClient_luaLoadComplete", "FromClient_MessageBox_CrystalSet_All_Init")
+function FromClient_MessageBox_CrystalSet_All_Init()
+  PaGlobal_MessageBox_CrystalSet_All:initialize()
+end

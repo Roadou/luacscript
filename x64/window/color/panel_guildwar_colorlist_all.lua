@@ -1,0 +1,73 @@
+PaGlobal_GuildWarColorList_All = {
+  _ui = {
+    _stc_mainBg = nil,
+    _stc_ButtonBG = nil,
+    _btn_confirm = nil,
+    _btn_allSet = nil,
+    _btn_cancel = nil,
+    _btn_close = nil,
+    _btn_reset = nil,
+    _btn_color_list = {},
+    _stc_keyGuideBG = nil,
+    _txt_keyGuide_A = nil,
+    _txt_keyGuide_B = nil,
+    _txt_keyGuide_Y = nil,
+    _txt_keyGuide_LT_Y = nil,
+    _txt_keyGuide_LT_X = nil
+  },
+  _colorValue = {
+    [0] = 4289163740,
+    [1] = 4287251941,
+    [2] = 4284946137,
+    [3] = 4283107988,
+    [4] = 4281729133,
+    [5] = 4292637809,
+    [6] = 4292890188,
+    [7] = 4292417814,
+    [8] = 4288807168,
+    [9] = 4284022784,
+    [10] = 4285642460,
+    [11] = 4281241042,
+    [12] = 4279664345,
+    [13] = 4278864787,
+    [14] = 4278203245,
+    [15] = 4292661361,
+    [16] = 4291936340,
+    [17] = 4292458518,
+    [18] = 4287065097,
+    [19] = 4284566528,
+    [20] = 4292637104,
+    [21] = 4291903358,
+    [22] = 4292417124,
+    [23] = 4287892029,
+    [24] = 4285333553,
+    [25] = 4284734339,
+    [26] = 4281258586,
+    [27] = 4279687488,
+    [28] = 4278219543,
+    [29] = 4278209809,
+    [30] = 4292648049,
+    [31] = 4292440385,
+    [32] = 4293287198,
+    [33] = 4289085969,
+    [34] = 4286588928,
+    [35] = 4286743170,
+    [36] = 4284835173,
+    [37] = 4282861383,
+    [38] = 4281611316,
+    [39] = 4280690214
+  },
+  _colorMaxIndex = 39,
+  _selectedColor = nil,
+  _baseColor = 4294967295,
+  _panelBaseSizeY = 0,
+  _mainBGBaseSizeY = 0,
+  _isConsole = false,
+  _initialize = false
+}
+runLua("UI_Data/Script/Window/Color/Panel_GuildWar_ColorList_All_1.lua")
+runLua("UI_Data/Script/Window/Color/Panel_GuildWar_ColorList_All_2.lua")
+registerEvent("FromClient_luaLoadComplete", "FromClient_GuildWarColorList_All_Init")
+function FromClient_GuildWarColorList_All_Init()
+  PaGlobal_GuildWarColorList_All:initialize()
+end

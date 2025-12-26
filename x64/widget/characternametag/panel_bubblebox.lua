@@ -1,0 +1,2 @@
+ToClient_SetBubbleBoxPanel(Panel_Copy_BubbleBox)
+ToClient_InitializeBubbleBoxPanelPool(500)

@@ -1,0 +1,9 @@
+function PaGlobal_Actor_DummyCharacter_CC_Close()
+  PaGlobal_Actor_DummyCharacter_CC:prepareClose()
+end
+function PaGlobal_Actor_DummyCharacter_CC_UpdateFunc(actorKey)
+  PaGlobal_Actor_DummyCharacter_CC:update(actorKey, true)
+end
+function FromClient_DummyCharacter_CC_ChangeCCCount(actorKey)
+  PaGlobal_Actor_DummyCharacter_CC:setCCountSetting(actorKey)
+end

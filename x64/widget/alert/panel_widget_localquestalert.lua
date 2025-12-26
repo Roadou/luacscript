@@ -1,0 +1,67 @@
+PaGlobal_LocalQuestAlert = {
+  _ui = {
+    stc_bg = UI.getChildControl(Panel_Widget_LocalQuestAlert, "Static_BG")
+  },
+  _info = {},
+  _LOCAL = {
+    CALPHEON = 1,
+    BALENOS = 2,
+    VALENCIA = 3,
+    SERENDIA = 4,
+    MEDIA = 5,
+    DRIGAN = 6,
+    KAMASYLVIA = 7,
+    ODYLLITA = 8,
+    MOUNTAINOFETERNALWINTER = 9,
+    MORNINGLAND = 10,
+    MORNINGLANDEPISODE_01 = 11,
+    MORNINGLANDEPISODE_02 = 12,
+    MORNINGLANDEPISODE_03 = 13,
+    MORNINGLANDEPISODE_04 = 14,
+    MORNINGLANDEPISODE_05 = 15,
+    MORNINGLANDEPISODE_06 = 16,
+    MORNINGLANDEPISODE_07 = 17,
+    MORNINGLANDEPISODE_08 = 18,
+    MORNINGLANDEPISODE_09 = 19,
+    MORNINGLANDEPISODE_10 = 20,
+    MORNINGLANDEPISODE_11 = 21,
+    MORNINGLANDEPISODE_12 = 22,
+    MORNINGLANDEPISODE_13 = 48,
+    DRAGONPALACEEPISODE_01 = 23,
+    DRAGONPALACEEPISODE_02 = 24,
+    DRAGONPALACEEPISODE_03 = 25,
+    DRAGONPALACEEPISODE_04 = 26,
+    ULUKITA = 27,
+    ROSEWAR = 28,
+    SERENDIA2 = 29,
+    CALPHEON2 = 30,
+    ATORAXION_1 = 31,
+    ATORAXION_2 = 32,
+    ATORAXION_3 = 33,
+    ATORAXION_4 = 34,
+    MORNINGLANDPT2 = 35,
+    MORNINGLANDPT2EPISODE_01 = 36,
+    MORNINGLANDPT2EPISODE_02 = 37,
+    MORNINGLANDPT2EPISODE_03 = 38,
+    MORNINGLANDPT2EPISODE_04 = 39,
+    MORNINGLANDPT2EPISODE_05 = 40,
+    MORNINGLANDPT2EPISODE_06 = 41,
+    MORNINGLANDPT2EPISODE_07 = 42,
+    MORNINGLANDPT2EPISODE_08 = 43,
+    MORNINGLANDPT2EPISODE_09 = 44,
+    MORNINGLANDPT2EPISODE_10 = 45,
+    MORNINGLANDPT2EPISODE_11 = 46,
+    MORNINGLANDPT2EPISODE_12 = 47,
+    ATORAXION_5 = 48,
+    EDANIAPT1 = 49,
+    OLVIAACADEMY_ENTER = 50
+  },
+  _completeInfoKey = -1,
+  _initialize = false
+}
+runLua("UI_Data/Script/Widget/Alert/Panel_Widget_LocalQuestAlert_1.lua")
+runLua("UI_Data/Script/Widget/Alert/Panel_Widget_LocalQuestAlert_2.lua")
+registerEvent("FromClient_luaLoadComplete", "FromClient_LocalQuestAlert_Init")
+function FromClient_LocalQuestAlert_Init()
+  PaGlobal_LocalQuestAlert:initialize()
+end

@@ -1,0 +1,51 @@
+local dialogButtonIcon = {
+  [0] = {
+    0,
+    0,
+    0,
+    0
+  },
+  {
+    125,
+    1,
+    153,
+    31
+  },
+  {
+    156,
+    1,
+    186,
+    31
+  },
+  {
+    94,
+    1,
+    124,
+    31
+  },
+  {
+    63,
+    1,
+    93,
+    31
+  },
+  {
+    63,
+    1,
+    93,
+    31
+  },
+  {
+    218,
+    1,
+    248,
+    31
+  }
+}
+function FGlobal_ChangeOnTextureForDialogQuestCompleteIcon(control)
+  if control == nil then
+    return
+  end
+  control:ChangeTextureInfoTextureIDAsync("Combine_Etc_Quest_Icon_Check")
+  control:setRenderTexture(control:getBaseTexture())
+end
